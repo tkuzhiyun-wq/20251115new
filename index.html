@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 左側隱藏選單 -->
+    <nav id="side-menu" aria-hidden="true" role="navigation">
+      <ul>
+        <li><a href="#">第一單元作品</a></li>
+        <li><a href="#">第一單元講義</a></li>
+        <li><a href="#">測驗系統</a></li>
+        <li><a href="#">測驗卷筆記</a></li>
+        <li><a href="#">作品筆記</a></li>
+        <li class="has-submenu">
+          <a href="#">淡江大學</a>
+          <ul class="submenu" aria-hidden="true">
+            <li><a href="#">教育科技學系</a></li>
+          </ul>
+        </li>
+        <li><a href="#">回到首頁</a></li>
+      </ul>
+    </nav>
+    
+    <!-- iframe 容器 -->
+    <div id="iframe-overlay" class="hidden">
+      <div id="iframe-container">
+        <button id="close-iframe" title="關閉">✕</button>
+        <iframe id="content-iframe" src="" frameborder="0" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"></iframe>
+      </div>
+    </div>
+    
+    <script src="sketch.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
